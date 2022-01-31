@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Détail</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top Header -->
+        <div class="top-header">
+            <div class="box">
+                <div class="one">
+                    <p>Vous souhaitez vendre sur Nenufea : <a href="">Inscrivez vous ici</a></p>
+                </div>
+                <div class="tow">
+                    <i class="fas fa-headset"></i> +33 6 60 11 68 53
+                </div>
+           </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+          <div id="menu-bar" class="fas fa-bars"></div>
+
+            <div class="logo">
+                <img src="image/Logo.png" class="logo-img" alt="">
+                <img src="image/txt-logo.svg" class="logo-txt" alt="">
+            </div>
+            <div class="menu">
+                <a href="#">Maquillage</a>
+                <a href="#">Visage</a>
+                <a href="#">Corps</a>
+                <a href="#">Cheveux</a>
+                <a href="#">Hygiéne</a>
+                <a href="#">Bien-être</a>
+                <a href="#">DIY</a>
+                <a href="#">Cofferts</a>
+                <a href="#">Artisants</a>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="fas fa-user"></i> <span class="user">John Deo</span></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i><h3 class="count">2</h3></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class = "card-wrapper">
+        <div class = "card">
+          <!-- card left -->
+          <div class = "product-imgs">
+            <div class = "img-display">
+                  <div class = "img-showcase">
+                    <img src = "image/pexels-mareefe-932577.png" alt = "product image">
+                    <img src = "image/pexels-mareefe-1188511.jpg" alt = "product image">
+                    <img src = "image/pexels-pixabay-161599.jpg" alt = "product image">
+                    <img src = "image/pexels-photo-1619488.jpeg" alt = "product image">
+                  </div>
+            </div>
+            <div class="img-select">
+                <div class = "img-item">
+                    <a href = "#" data-id = "1">
+                      <img src = "image/pexels-mareefe-932577.png" alt = "shoe image">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "2">
+                      <img src = "image/pexels-mareefe-1188511.jpg" alt = "shoe image">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "3">
+                      <img src = "image/pexels-pixabay-161599.jpg" alt = "shoe image">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "4">
+                      <img src = "image/pexels-photo-1619488.jpeg" alt = "shoe image">
+                    </a>
+                  </div>
+                </div>
+            </div>
+          <!-- card right -->
+          <div class = "product-content">
+            <h3 class = "product-subtitle">Huile essentiales</h3>
+            <h1 class = "product-title">Pack Huiles Essentiales</h>
+            <div class = "product-tag">
+              <a href="#">Produits naturels</a>
+              <a href="#">Sains</a>
+              <a href="#">Bio</a>
+              <a href="#">Vegan</a>
+              <a href="#">100% recyclè</a>
+            </div>
+  
+            <div class = "product-price">
+              <div class="new-price">
+                  <h2>96.<span>00</span> €</h2>
+              </div>
+              <div class="old-price">
+                  <h2>120.<span>00</span> €</h2>
+                  <h3 class="discount">-20%</h3>
+              </div>
+            </div>
+  
+            <div class="product-brand">
+                <a href="#"><img src="image/NoPath.png" alt=""></a>
+                <a href="#">Olivia Health</a>
+            </div>
+
+            <div class="produit-base">
+                <h3>base d'huile</h3>
+                <div class="box">
+                    <a href="#">Jasmin</a>
+                    <a href="#">Crocus</a>
+                    <a href="#">Dahlia</a>
+                    <a href="#">Edelweiss</a>
+                    <a href="#">Lavande</a>
+                </div>
+            </div>
+
+            <div class="produit-origine">
+                <h3>Origine</h3>
+                <div class="box-container">
+                    <a href="#">Mandrine Rouge</a>
+                    <a href="#">Menth poivrée</a>
+                    <a href="#">Lavande Aspic</a>
+                    <a href="#">Spin baurnier</a>
+                    <a href="#">Marjolaine à Coquille</a>
+                </div>
+            </div>
+            <div class = "purchase-info">
+              <label for="number">Quantité</label>
+              <input type = "number" id="number" min = "0" value = "1">
+              <button type = "button" class = "btn">
+                Ajouter au panier
+              </button>
+              <button type = "button" class = "btn"><i class="fa fa-heart" aria-hidden="true"></i></button><br>
+              <div><a href="#" class="down"><i class="fas fa-download"></i>Télécharger les détails du produit</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+      <div class="com-det">
+          <div class="btn-box">
+              <button id="btn1" onclick="opencom()">Composition</button>
+              <button id="btn2" onclick="opendet()">Détail Produit</button>
+          </div>
+          <div id="content1" class="content">
+              <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, architecto maiores necessitatibus quas quod commodi atque error delectus doloremque ipsam libero voluptatum consectetur molestiae beatae saepe harum quo.
+                   Ab, impedit? Quo, consectetur asperiores id architecto, maiores quas qui error deleniti laborum omnis 
+                   exercitationem hic harum ut ipsum fugiat soluta rerum enim nulla aut doloremque? Cumque eligendi eaque 
+                   aliquid. Alias quam commodi eaque voluptatem perferendis ad assumenda iure recusandae similique ratione
+                    explicabo eius dolores accusantium, facere aperiam laborum. Explicabo maxime consequuntur iure 
+                    recusandae. Et nemo quasi ducimus numquam libero dolor exercitationem!
+              </p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nisi id at. Quas amet nobis in. Dignissimos aliquam veniam 
+                illum dolorem commodi quod consectetur quae labore impedit, excepturi minima delectus!</p>
+          </div>
+          <div id="content2" class="content">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, architecto maiores necessitatibus quas quod commodi atque error delectus doloremque ipsam libero voluptatum consectetur molestiae beatae saepe harum quo.
+                 Ab, impedit? Quo, consectetur asperiores id architecto, maiores quas qui error deleniti laborum omnis 
+                 exercitationem hic harum ut ipsum fugiat soluta rerum enim nulla aut doloremque? Cumque eligendi eaque 
+                 aliquid. Alias quam commodi eaque voluptatem perferendis ad assumenda iure recusandae similique ratione
+                  explicabo eius dolores accusantium, facere aperiam laborum. Explicabo maxime consequuntur iure 
+                  recusandae. Et nemo quasi ducimus numquam libero dolor exercitationem!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nisi id at. Quas amet nobis in. Dignissimos aliquam veniam 
+              illum dolorem commodi quod consectetur quae labore impedit, excepturi minima delectus!</p>
+        </div>
+      </div>
+
+      <!-- Produits Similaire -->
+      <section class="produit-similaire">
+          <h2 class="header">Produits similaire</h2>
+         <div class="produit-container">
+             <div class="pbox">
+               <div class="images">
+                   <img src="image/product s2.png" alt="">
+                   <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+               </div>
+               <div class="contents">
+                   <h3>Pack Huiles Essentiales</h3>
+                   <h4>Huiles essentiales</h4>
+                   <h6>Olivia health</h6>
+                   <h3 class="price">120.<span>00</span> €</h3>
+                   <div class="product-tag">
+                        <a href="#">Produits naturels</a>
+                        <a href="#">Sains</a>
+                        <a href="#">Bio</a>
+                        <a href="#">Vegan</a>
+                        <a href="#">plus</a>
+                   </div>
+               </div>
+             </div>
+
+             <div class="pbox">
+               <div class="images">
+                   <img src="image/pexels-mareefe-932577.png" alt="">
+                   <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+               </div>
+               <div class="contents">
+                   <h3>Pack Huiles Essentiales</h3>
+                   <h4>Huiles essentiales</h4>
+                   <h6>Olivia health</h6>
+                   <h3 class="price">120.<span>00</span> €</h3>
+                   <div class="product-tag">
+                        <a href="#">Produits naturels</a>
+                        <a href="#">Sains</a>
+                        <a href="#">Bio</a>
+                        <a href="#">Vegan</a>
+                        <a href="#">plus</a>
+                   </div>
+               </div>
+             </div>
+             <div class="pbox">
+               <div class="images">
+                   <img src="image/product s.png" alt="">
+                   <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+               </div>
+               <div class="contents">
+                   <h3>Pack Huiles Essentiales</h3>
+                   <h4>Huiles essentiales</h4>
+                   <h6>Olivia health</h6>
+                   <h3 class="price">120.<span>00</span> €</h3>
+                   <div class="product-tag">
+                        <a href="#">Produits naturels</a>
+                        <a href="#">Sains</a>
+                        <a href="#">Bio</a>
+                        <a href="#">Vegan</a>
+                        <a href="#">plus</a>
+                   </div>
+               </div>
+             </div>
+             <div class="pbox">
+               <div class="images">
+                   <img src="image/NoPath - Copy.png" alt="">
+                   <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+               </div>
+               <div class="contents">
+                   <h3>Pack Huiles Essentiales</h3>
+                   <h4>Huiles essentiales</h4>
+                   <h6>Olivia health</h6>
+                   <h3 class="price">120.<span>00</span> €</h3>
+                   <div class="product-tag">
+                        <a href="#">Produits naturels</a>
+                        <a href="#">Sains</a>
+                        <a href="#">Bio</a>
+                        <a href="#">Vegan</a>
+                        <a href="#">plus</a>
+                   </div>
+               </div>
+             </div>
+         </div>
+      </section>
+
+      <!-- Service -->
+      <section class="service">
+        <div class="box-container">
+          <div class="sbox">
+            <i class="far fa-money-bill-alt"></i>
+            <h2>Paiement en ligne 100% <br> sécurisé</h2>
+            <p>Cart bancaire - Paypal</p>
+          </div>
+          <div class="sbox">
+            <img  src="image/quality.png" alt="">
+            <h2>Servie client</h2>
+            <p>+33 7 78 95 86 45 du lundi au vendredi <br> de 9h à 13h et de 14h à 17h</p>
+          </div>
+          <div class="sbox">
+            <img  src="image/24-hours-support.png" alt="">
+            <h2>Besoin d'un conseil ?</h2>
+            <p>Contactez-nous par formulaire</p>
+          </div>
+          <div class="sbox">
+            <i class="fas fa-truck-moving"></i>
+            <h2>Produits naturels</h2>
+            <p>Pour une consommation raisonnée et <br> écologique</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newletter -->
+      <section class="news">
+        <div class="box-container">
+          <div class="text">
+            <h3>Je m'abonne à la newsletter</h3>
+          </div>
+          <form action="">
+            <div class="input_box">
+              <input type="email" placeholder="Votre email" name="email" id="email">
+              <a class="papaer" href="#"><i class="far fa-paper-plane"></i></a>
+            </div>
+            <div class="input_box">
+              <input type="checkbox" name="check" id="">
+              <h4>En cochant et validant, j'accept de recevoir par mail les newsletters de Nenufea . Mes données seront traitées conformément à 
+                la <a href="#">Politique de Gestion des données</a> Personnelles que j'ai lue et acceptée
+              </h4>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Message -->
+      <section class="msg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas velit consequatur, expedita ducimus quo voluptate numquam temporibus atque assumenda non dolore sint, repudiandae perferendis itaque labore voluptatem vel quidem dignissimos, ea asperiores suscipit eum molestiae deleniti voluptatibus? Impedit in neque culpa fugiat inventore fugit obcaecati ducimus, voluptatibus quam aperiam est eligendi repellendus soluta hic quisquam porro placeat! Laborum distinctio nostrum eum necessitatibus tenetur sequi, architecto sed quas, quia, impedit recusandae.</p>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="box-container">
+          <div class="box">
+           <a href=""><img src="image/Path 4.svg" class="logo-img" alt=""></a> 
+           <a href=""><img src="image/Group 3.svg"  class="logo-txt" alt=""></a>
+            <p>In eleifend risus id ex tincidunt dapibus, Aenean velit risus, imperdiet non varius</p>
+          </div>
+          <div class="box">
+            <h3>A propos</h3>
+              <a href="#">Qui Sommes nous</a>
+              <a href="#">CGU</a>
+              <a href="#">CGV</a>
+              <a href="#">Mentions légales</a>
+              <a href="#">Données Personnelles</a>
+              <a href="#">Plan du Site</a>
+          </div>
+          <div class="box">
+            <h3>Commerçant</h3>
+              <a href="#">Boutique</a>
+              <a href="#">Catégorie</a>
+              <a href="#">Produits</a>
+          </div>
+          <div class="box">
+            <h3>Votre Compte</h3>
+              <a href="#">Livraison</a>
+              <a href="#">Commandes</a>
+              <a href="#">Informations Personnelles</a>
+              <a href="#">Bons de réducations</a>
+          </div>
+            <div class="box">
+              <h3>Besoin d'aide ?</h3>
+                <a href="#">FAQ</a>
+                <a href="#">Nous Contacter</a>
+            </div>
+        </div>
+        <!-- Creadit -->
+        <div class="creadit">
+          <div class="txt">
+            <h3>Copyright &copy; 2020 - Nenufea</h3>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+           <div class="paiement">
+             <a href="#"><img src="image/MasterCard.png" alt=""></a>
+             <a href="#"><img src="image/Paypal.png" alt=""></a>
+             <a href="#"><img src="image/Visa.png" alt=""></a>
+           </div>
+           <div class="logos">
+             <img src="image/Group 137.svg" alt="">
+           </div>
+        </div>
+      </footer>
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/dbfca54b0d.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

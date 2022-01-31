@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;1,500;1,600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat',sans-serif;
+    overflow-x: hidden;
+}
+*{
+    border: none;
+    outline: none;
+}
+/* Top Header */
+.top-header .box{
+    position: relative;
+    height: 5vh;
+    top: 0;
+    left: 0;right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20rem;
+    align-items: center;
+    font-weight: 430;
+    background-color: #f0a7a1;
+    font-size: .85rem;
+}
+.top-header .box .one a{
+    color: #000;
+    font-size: .85rem;
+}
+
+/* Navigation */
+nav{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4%;
+    z-index: 1000;
+    transition: .6s;
+}
+nav .menu{
+    transition: all .9s ease;
+}
+nav .logo {
+    display: flex;
+}
+nav .logo .logo-img{
+    width: 30%;
+}
+nav .logo .logo-txt{
+    width: 55%;
+    margin-left: .5rem;
+}
+nav .menu a{
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: .9rem;
+    color: #000;
+    font-weight: 500;
+}
+nav .icons a{
+   margin-left: 12px;
+   color: #000;
+   font-weight: 500;
+   text-decoration: none;
+}
+nav .icons a i{
+    padding: .6rem .7rem;
+    border-radius: 50%;
+    background-color: #eee;
+    color: #3ab39b;
+}
+nav .icons a:nth-child(3) i{
+    position: relative;
+}
+nav .icons a .count{
+    position: absolute;
+    font-size: .9rem;
+    margin-top: -3rem;
+    margin-left: 14.5rem;
+    background-color: #3ab39b;
+    padding: .3rem .7rem;
+    border-radius: 50%;
+    color: #eee;
+}
+nav .icons a:nth-child(2) i{
+    padding: .6rem .7rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #3ab39b;
+}
+#menu-bar{
+    font-size: 1.7rem;
+    padding: .5rem 1.5rem;
+    color: #3ab39b;
+    border-radius: .3rem;
+    cursor: pointer;
+    display: none;
+  }
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 125%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item img{
+    max-width: 150px;
+    min-height: 100px;
+    border-radius: .5rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+}
+.product-title{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #000;
+    margin-top: -1.5rem;
+}
+.product-subtitle{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.product-tag{
+    display: flex;
+}
+.product-tag a{
+    background-color: #eee;
+    font-size: .8rem;
+    padding: .5rem;
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
+.product-price{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: -1.5rem;
+}
+.product-price .new-price h2{
+    font-size: 2.5rem;
+}
+.product-price .new-price span{
+    font-size: 1rem;
+    color: #000;
+}
+.product-price .old-price{
+    display: flex;
+    align-items: center;
+    margin-right: 6rem;
+}
+.product-price .old-price h2{
+    color: #999;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.product-price .old-price span{
+    font-weight: 600;
+    font-size: .9rem;
+}
+.product-price .old-price .discount{
+    background-color: #336667;
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-left: .5rem;
+    color: #fff;
+    font-weight: 400;
+}
+.product-brand{
+    display: flex;
+    align-items: center;  
+     margin-top: -1.5rem;
+
+}
+.product-brand img{
+   width: 100%;
+}
+.product-brand a{
+    text-decoration: none;
+    margin-right: .5rem;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.produit-base h3,.produit-origine h3{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.produit-base .box{
+    display: flex;
+    margin-top: -.5rem;
+}
+.produit-base .box a{
+    text-decoration: none;
+    margin-right: 8px;
+    font-size: .8rem;
+    color: #000;
+    padding: .4rem;
+    background-color: transparent;
+    border: .12rem solid #aaa;
+    margin-bottom: 1rem;
+}
+.produit-base .box a:hover,.produit-origine .box-container a:hover{
+    border: .12rem solid #3ab39b;
+}
+.produit-origine .box-container{
+    margin-top: -1.2rem;
+}
+.produit-origine .box-container a{
+    text-decoration: none;
+    margin-right: -2px;
+    font-size: .8rem;
+    color: #000;
+    padding: .5rem;
+    background-color: transparent;
+    border: .12rem solid #aaa;
+    
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info label{
+    font-size: .9rem;
+    font-weight: 500;
+    display: block;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .btn:first-of-type{
+    background: #3ab39b;
+    padding: .9rem 3.5rem;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+}
+.purchase-info .btn:last-of-type{
+    background: #fff;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: #3ab39b;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+.purchase-info div{
+    margin-top: -1rem;
+}
+
+.purchase-info .down i{
+    padding-right: 1rem;
+}
+.purchase-info .down{
+    text-decoration: none;
+    color: #3ab39b;
+    font-size: 1rem;
+    border: .1rem solid #3ab39b;
+    padding: .8rem 1.5rem;
+    border-radius: 1.3rem;
+    margin-top: 5rem;
+}
+.com-det{
+    width: 80%;
+    height: 350px;
+    position: relative;
+    margin: 80px auto;
+    overflow: hidden;
+}
+.com-det .btn-box{
+    display: flex;
+    border-bottom: .1rem solid #ccc;
+}
+.com-det .btn-box button{
+    background: transparent;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    padding: 1rem 1rem;
+    margin-right: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.content{
+    position: absolute;
+    transform: translateX(100%);
+    transition: .3s;
+}
+.com-det .content p{
+    font-size: .9rem;
+    color: #000;
+}
+#content1{
+    transform: translateX(0%);
+}
+#btn1{
+    border-bottom: .2rem solid #3ab39b;
+}
+
+/* Product similaire */
+.produit-similaire {
+    margin: 0 2rem;
+    margin-bottom: 3rem;
+}
+.produit-similaire .header{
+    font-size: 3rem;
+    margin-top: -2rem;
+    text-align: center;
+}
+.produit-similaire .produit-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.produit-similaire .produit-container .pbox{
+    width: 18rem;
+    border: .1rem solid #ccc;
+    padding-bottom: .5rem;
+    outline: none;
+    position: relative;
+}
+.pbox .images a{
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    color: #fff;
+    font-size: .8rem;
+    background-color: #f0a7a1;
+    padding: .4rem .55rem;
+    border-radius: 50%;
+}
+.pbox .images a:hover{
+    background-color: transparent;
+    color: #f0a7a1;
+}
+.pbox .images img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.pbox .contents{
+    padding-left: .7rem;
+    margin-top: -1rem;
+}
+.pbox .contents h3{
+    color: #336667;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.pbox .contents h4{
+    margin-top: -1.2rem;
+    font-weight: 500;
+}
+.pbox .contents h6{
+    color: #666;
+    margin-top: -.8rem;
+    font-weight: 400;
+}
+.pbox .contents .price{
+    color: #000;
+    margin-top: -1rem;
+    font-weight: bold;
+}
+.pbox .contents .price span{
+    font-size: .9rem;
+}
+.pbox .contents .product-tag{
+    margin-top: -.5rem;
+}
+.pbox .contents .product-tag a{
+    font-size: .52rem;
+    font-weight: 500;
+}
+.service{
+    padding: 1.5rem 0;
+    background-color: #eee;
+}
+.service .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.service .sbox{
+    text-align: center;
+    width: 16rem;
+}
+.service .sbox i{
+    background-color: #fff;
+    padding: .9rem .8rem;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    color: #3ab39b;
+}
+.service .sbox img{
+    width: 12%;
+    background-color: #fff;
+    padding: .9rem;
+    margin-left: 6rem;
+    border-radius: 50%;
+}
+.service .sbox h2{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.service .sbox p{
+    font-size: .8rem;
+    color: #336667;
+    margin-top: -.5rem;
+}
+.news{
+    margin-top: -1.2rem;
+    padding: 1.5rem 3rem;
+    background-color: #3ab39b;
+}
+.news .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+}
+.news .box-container .text{
+    flex: 1 1 15rem;
+}
+.news .box-container form{
+    flex:  1 1 15rem;
+    margin-top: 2rem;
+}
+.news .box-container .text h3{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 400;
+    padding-left: 3rem;
+}
+.news .box-container form .input_box input{
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 1.5rem;
+    color: #444;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1rem;
+    width: 22rem;
+    height: 1.8rem;
+}
+.news .box-container form .input_box .papaer{
+    background-color: #336667;
+    border-radius: 50%;
+    padding: .95rem 1.15rem;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+.news .box-container form .input_box input::placeholder{
+    font-size: .9rem;
+}
+.news .box-container form .input_box:nth-child(2){
+    display: flex;
+    margin-top: .5rem;
+}
+.news .box-container form .input_box:nth-child(2) h4{
+    font-size: .7rem;
+    width: 70%;
+    font-weight: 400;
+    margin-top: .5rem;
+    color: #fff;
+}
+.news .box-container form .input_box:nth-child(2) input{
+    width: 1rem;
+    margin-right: .8rem;
+}
+.news .box-container form .input_box:nth-child(2) h4 a{
+    color: #336667;
+    background-color: none;
+}
+.msg{
+    background-color: #204546;
+    padding: 2rem 5rem;
+    text-align: center;
+}
+.msg p{
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+}
+footer{
+   background-color: #336667;
+   padding: 1rem 3rem;
+   padding-top: 3rem;
+}
+footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 1rem;
+}
+footer .box-container .box .logo-img{
+    width: 25%;
+    margin-left: 8rem;
+}
+footer .box-container .box  .logo-txt{
+    width: 50%;
+    margin-left: 5rem;
+}
+footer .box-container .box:nth-child(1)
+{
+    width: 20rem;
+}
+footer .box-container .box a{
+    text-decoration: none;
+    display: block;
+    font-size: .9rem;
+    color: #fff;
+    font-weight: 200;
+    padding: .5rem 0;
+}
+footer .box-container .box h3{
+    color: #fff;
+    font-weight: 500;
+}
+footer .box-container .box p{
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    font-size: .9rem;
+}
+/* Creadit */
+.creadit{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 3rem;
+    border-top: .1rem solid #ccc;
+    width: 95%;
+    padding-top: .5rem;
+}
+.creadit .txt h3{
+   font-size: .8rem;
+   color: #fff;
+   font-weight: 400;
+}
+.creadit .social{
+    margin-left: 3rem;
+}
+.creadit .social a{
+    margin-left: 1rem;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.creadit .cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20rem;
+}
+.creadit .cart a img{
+    min-width: 5rem;
+}
+.creadit .paiement{
+    display: flex;
+    align-items: center;
+   margin-left: 7rem;
+}
+.creadit .paiement a img{
+    max-width: 2.5rem;
+    margin-left: .5rem;
+}
+.creadit .logos{
+    margin-left: 28rem;
+}
+.creadit .logos h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+
+@media  screen and (max-width: 768px){
+    #menu-bar{
+        display: block;
+      }
+    
+      nav .menu{
+        position: absolute;
+        top:100%; left:-120%;
+        width:100%;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+      }
+    
+      nav .menu.active{
+        left:0;
+      }
+    
+      nav .menu a{
+        font-size: .9rem;
+        padding:.8rem;
+        margin: .8rem;
+        display: block;
+        text-align: center;
+      }
+      nav .icons .user{
+          display: none;
+      }
+    .top-header .box{
+       padding: 0 10px;
+    }
+    nav .icons a{
+        margin-right: -10px;
+    }
+    nav .icons a .count{
+        right: .5rem;
+    }
+    .card-wrapper .card{
+        padding: 0 3rem
+    }
+    .news{
+    padding: 0 5rem;
+    }
+    .news .box-container form{
+        margin-left: 3rem;
+        margin-top: -1rem;
+    }
+
+}
+@media  screen and (max-width: 425px){
+    html{
+        font-size: 70%;
+    }
+    .news .box-container form .input_box:nth-child(1){
+        display: flex;
+    }
+    .card-wrapper .card .product-content{
+        margin-left: -1.2rem;
+    }
+    .card-wrapper .card .product-content .purchase-info .down{
+         font-size:.81rem;
+    }
+    .produit-similaire .header{
+        font-size: 2rem;
+    }
+    .produit-similaire .produit-container .pbox{
+        width: 35rem;
+    }
+    nav .icons a{
+        margin-left:.8rem;
+    }
+    nav .icons a .count{
+        font-size: .7rem;
+        margin-top: -3.1rem;
+    }
+    .top-header .box,.top-header .box .one p a{
+        font-size: .6rem;
+    }
+    nav .logo .logo-img,
+    nav .logo .logo-txt{
+        width: 25%;
+    }
+}
